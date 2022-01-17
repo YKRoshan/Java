@@ -1,0 +1,11 @@
+.classpath/
+bin/
+lib/
+libz/
+/build/
+.idea/**
+.gradle/
+.settings/
+.vscode/
+sonar/
+/out

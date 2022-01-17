@@ -1,0 +1,45 @@
+Lambda Expression:
+The Lambda expression is used to provide the implementation of functional interface.
+
+Functional Interface:
+Functional interface is a interface which has only one abstract method. There are around 40+ functional
+interfaces under java.util.function package.
+Important Functional interfaces:
+Predicate: It is a functional interface in which method takes ONE argument and returns BOOLEAN value.
+Function:  It is a functional interface in which method takes ONE argument and returns SOME value.
+Consumer:  It is a functional interface in which method takes ONE argument and returns NO value.
+Supplier:  It is a functional interface in which method takes NO argument and returns SOME value.
+
+Stream:
+Stream is used to process the data of collections.
+Stream operations are either intermediate or terminal.
+
+1. Non-Terminal Operations/Intermediate Operations
+    Stream<T> filter(Predicate)
+    Stream<T> map(Function)
+    Stream<T> flatMap(Function)
+    Stream<T> distinct()
+    Stream<T> sorted(Comparator)
+    Stream<T> peek(Consumer)
+    Stream<T> limit(long)
+    Stream<T> skip(long)
+
+2. Terminal Operations
+    forEach(Consumer)
+    Object[] toArray()
+    Optional<T> reduce(identity, accumulator)
+    <R,A> R collect(Collector)
+    Optional<T> min(Comparator)
+    Optional<T> max(Comparator)
+    long count()
+    boolean anyMatch(Predicate)
+    boolean allMatch(Predicate)
+    boolean noneMatch(Predicate)
+    Optional<T> findFirst()
+    Optional<T> findAny()
+
+
+Optional:
+Optional is a container of object which may or may not contain a non-null value. If a value is present,
+isPresent() will return true and get() will return the value.
+It is introduce to avoid null pointer exception.
